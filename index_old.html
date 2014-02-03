@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+
+    <form id="addTask" action="">
+      <input type="text" placeholder="Your New Task"/>
+      <br/>
+      <input type="submit" value="Add Task"/>
+    </form>
+
+    <h1>My Tasks</h1>
+    <div class="tasks">
+      <script id="taskTemplate" type="text/template">
+        <span><%= title %></span> <button class="edit">Edit</button><button class="delete">Delete</button<
+      </script>
+    </div>
+
+    <!--
+    <script id="personTemplate" type="text/template">
+    < strong > <%= name %> < /strong> ( <%= age %> ) - <%= occupation %>
+    </script> -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
