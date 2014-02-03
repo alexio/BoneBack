@@ -1,3 +1,8 @@
+// id is id of templat being fetched
+var template = function(id) {
+  return $('#' + id).html();
+};
+
 //Person Model
 var Person = Backbone.Model.extend({
     defaults: {
